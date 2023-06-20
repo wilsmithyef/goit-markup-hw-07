@@ -138,7 +138,11 @@ h5 {
 
 /*----------------------section header-----------------------*/
 
-header {
+.page-header {
+  height: 80px;
+}
+
+.page-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -146,8 +150,6 @@ header {
   border-top-width: 0px;
   border-right-width: 0px;
   border-left-width: 0px;
-
-  height: 80px;
   padding: 0 var(--container-pading);
 }
 
@@ -157,13 +159,13 @@ header {
   justify-content: space-between;
 }
 
-header nav {
+.page-header nav {
   display: flex;
   align-items: center;
   gap: 100px;
 }
 
-header nav .logo {
+.page-header nav .logo {
   color: var(--accent-color);
   font-family: "Raleway", sans-serif;
   font-size: 26px;
@@ -174,7 +176,7 @@ header nav .logo {
   padding-bottom: 25px;
 }
 
-header nav .nav-menu {
+.page-header nav .nav-menu {
   display: flex;
   list-style: none;
   gap: 80px;
@@ -182,7 +184,7 @@ header nav .nav-menu {
   padding-bottom: 32px;
 }
 
-header nav .nav-menu .page {
+.page-header nav .nav-menu .page {
   color: var(--primary-black-color);
   font-weight: 500;
   font-size: 14px;
@@ -192,7 +194,7 @@ header nav .nav-menu .page {
   text-decoration: none;
 }
 
-header nav .nav-menu a[data-descr] {
+.page-header nav .nav-menu a[data-descr] {
   position: relative;
   text-decoration: none;
   cursor: pointer;
@@ -367,7 +369,7 @@ header li .icon-mailbox {
   opacity: 1;
   transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    z-index: 1;
+  z-index: 1;
 }
 
 .backdrop.is-hidden {
@@ -388,9 +390,6 @@ header li .icon-mailbox {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-
-
-  
 
   /* background-color: #2196f3; */
   /* padding-top: 11px; */
